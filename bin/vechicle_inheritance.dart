@@ -122,3 +122,66 @@
 //   t.name();
 //   t.age();
 // }
+import 'dart:io';
+abstract class details{
+  void name(int n );
+  void age(int n );
+}
+class Studentdetails extends details{ 
+  void name(int n){
+    String? a;
+    List<String> student =[];
+    for(int i =0;i<n;i++){
+  print("Enter the student name");
+  a=stdin.readLineSync()!;
+  student.(a);
+   }
+   print("List: $student");
+  }
+  void age(int n){
+  int r;
+  List<int> age =[];
+    for(int i =0;i<n;i++){
+  print("Enter the age ");
+ r = int.parse(stdin.readLineSync()!);
+  age.add(r);
+   }
+   print("List: $age");
+  }
+}
+
+class Teacherdetails extends details{ 
+  void name(int n){
+   String? a;
+    List<String> student =[];
+    for(int i =0;i<n;i++){
+  print("Enter the teacher name");
+  a=stdin.readLineSync()!;
+  student.add(a);
+   }
+   print("List: $student");
+  }
+  void age(int n){
+  int r;
+  List<int> age =[];
+    for(int i =0;i<n;i++){
+  print("Enter the age ");
+ r = int.parse(stdin.readLineSync()!);
+  age.add(r);
+   }
+   print("List: $age");
+  }
+}
+void main(){
+  int a,h;
+  Studentdetails s = Studentdetails();
+  Teacherdetails t = Teacherdetails();
+    print("Enter the student number");
+    a = int.parse(stdin.readLineSync()!);
+  s.name(a);
+  s.age(a);
+   print("Enter the Teacher number");
+   a = int.parse(stdin.readLineSync()!);
+  t.name(a);
+  t.age(a);
+}
