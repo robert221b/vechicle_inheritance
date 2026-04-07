@@ -80,30 +80,45 @@
 // }
 
 // ignore: strict_top_level_inference, prefer_typing_uninitialized_variables
-import 'dart:io';
-
-abstract class CAR{
-    void name();
-}
-class cardetails extends CAR{
-  void name(){
-    String ?model;
-    stdout.write("Enter car name ");
-    model = stdin.readLineSync()!;
-    print("The car name is $model ");
-  }
-}
-class ownerdetails extends CAR{
-  String? own;
-    void name(){
-      stdout.write("Enter owner name ");
-      own = stdin.readLineSync()!;
-      print("The owner name is $own");
-    }
-}
-void main(){
- cardetails c = cardetails();
- ownerdetails o = ownerdetails();
- c.name();
- o.name(); 
-}
+// import 'dart:io';
+// abstract class details{
+//   void name();
+//   void age();
+// }
+// class Studentdetails extends details{ 
+//   void name(){
+//     String ?name;
+//   stdout.write("Enter the student name");
+//   name =stdin.readLineSync()!;
+//   print("name is $name");
+//   }
+//   void age(){
+//     String?age;
+//   stdout.write("Enter the student age");
+//   age =stdin.readLineSync()!;
+//   print("age is $age");
+// }
+// }
+// class Teacherdetails extends details{ 
+//   void name(){
+//     String ?name;
+//     String?age;
+//   stdout.write("Enter the teacher name");
+//   name =stdin.readLineSync()!;
+//   print("name is $name");
+//   }
+//   void age(){
+//     String ?age;
+//   stdout.write("Enter the teacher age");
+//   age =stdin.readLineSync()!;
+//   print("age is $age");
+// }
+// }
+// void main(){
+//   Studentdetails s = Studentdetails();
+//   Teacherdetails t = Teacherdetails();
+//   s.name();
+//   s.age();
+//   t.name();
+//   t.age();
+// }
