@@ -224,3 +224,35 @@
 //   f.getData();
 //   f.getDisplay();
 // }
+//  import 'dart:io';
+// void main(){
+//   int roll_no;
+//   stdout.write("Enter roll no");
+//   roll_no =int.parse(stdin.readLineSync()!);
+
+//   if(roll_no ==1){
+//     print("Enter name:");
+//     String name =stdin.readLineSync()!;
+//     print("name is $name");
+//      }
+//   else if(roll_no==2){
+//     print("Enter name:");
+//     String name =stdin.readLineSync()!;
+//     print("name is $name");
+//   }
+//   else{
+//     print("invalid");
+//   }
+// }
+// void main() {
+//   print("Start");
+//   print("Fetching data...");
+//   for (int i = 0; i < 1000000000; i++) {} 
+//   print("Data fetched");
+//   print("End");
+// }
+import 'dart:async';
+void main()async{
+  print("start");
+  await 
+}
