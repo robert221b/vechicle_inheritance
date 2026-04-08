@@ -251,16 +251,14 @@
 //   print("Data fetched");
 //   print("End");
 // // }
- import 'dart:async';
- void main() async {
-   print("start");
-  await fetchData();
-     print("End");
-}
- Future<void> fetchData()async{
-   print("Feaching data...");
-   await Future.delayed(Duration(seconds :2));
-   print("Data feached");
+//  import 'dart:async';
+//  void main() async {
+//    print("start");
+//   await fetchData();
+//      print("End");
+// }
+//  Future<void> fetchData()async{
+//    print("Feaching data...");
+//    await Future.delayed(Duration(seconds :2));
+//    print("Data feached");
 
- 
- }
